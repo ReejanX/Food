@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash"
-    android:background="@drawable/download">
+    android:background="@drawable/download"
+    tools:context=".Splash">
+
     <androidx.cardview.widget.CardView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        app:cardCornerRadius="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:cardCornerRadius="200dp"
-        >
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="50dp"
-        android:src="@drawable/hat"
-       />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="50dp"
+            android:src="@drawable/hat" />
 
 
     </androidx.cardview.widget.CardView>

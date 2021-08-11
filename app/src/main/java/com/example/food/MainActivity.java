@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         tabLayout = findViewById(R.id.tabLayout);
         viewPager = findViewById(R.id.viewPager);
-
+        getWindow().setStatusBarColor(getResources().getColor(R.color.orange));
         FragmentManager fragmentManager = getSupportFragmentManager();
-        adapter = new FragmentAdapter(fragmentManager,getLifecycle());
+        adapter = new FragmentAdapter(fragmentManager, getLifecycle());
         viewPager.setAdapter(adapter);
         tabLayout.addTab(tabLayout.newTab().setText("Login"));
         tabLayout.addTab(tabLayout.newTab().setText("Sign Up"));

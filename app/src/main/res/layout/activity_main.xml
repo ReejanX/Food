@@ -36,13 +36,13 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabIndicatorFullWidth="false"
-
             android:background="@drawable/viewpager"
+
             app:layout_constraintBottom_toTopOf="@+id/viewPager"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
             app:tabIndicatorColor="@color/orange"
+            app:tabIndicatorFullWidth="false"
             app:tabTextColor="@color/black"
             tools:layout_editor_absoluteX="0dp" />
 
@@ -52,12 +52,11 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/hat"
-       app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias=".1"
-/>
+        app:srcCompat="@drawable/hat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
